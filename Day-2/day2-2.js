@@ -3,12 +3,12 @@ const fs = require('fs')
 function wholeDivisionInRow(row) {
     // Not a fan of the brute force find method here
     for(var i=0;i<row.length; i++) {
-            for(var j=0; j<row.length; j++) {
-                if(row[i]!=row[j] && row[i]%row[j] == 0) {
-                    return row[i]/row[j]
-                }
+        for(var j=0; j<row.length; j++) {
+            if(row[i]!=row[j] && row[i]%row[j] == 0) {
+                return row[i]/row[j]
             }
         }
+    }
     throw "Failed to find divisor in row"
 }
 
@@ -31,4 +31,4 @@ function parseInput(err, data) {
     
 }
 
-fs.readFile('./input.txt', 'utf-8', parseInput)
+fs.readFile('i', 'utf-8', parseInput)

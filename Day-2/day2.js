@@ -17,4 +17,4 @@ function parseInput(err, data) {
     console.log(checksum)
 }
 
-fs.readFile('./input.txt', 'utf-8', parseInput)
+fs.readFile('i', 'utf-8', parseInput)
