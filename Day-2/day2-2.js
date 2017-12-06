@@ -31,4 +31,4 @@ function parseInput(err, data) {
     
 }
 
-fs.readFile('i', 'utf-8', parseInput)
+fs.readFile('input.txt', 'utf-8', parseInput)
