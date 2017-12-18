@@ -1,15 +1,3 @@
-function getFibN(number) {
-    return getFibN2(number, 1, 1, 3)
-}
-
-function getFibN2(number, prev, cur, count) {
-    next = cur + prev
-    if(next >= number) {
-        return count
-    }
-    return getFibN2(number, cur, next, count+1)
-}
-
 function dist(input) {
     sqrt = Math.sqrt(input)
     ceil = Math.ceil(sqrt)%2?Math.ceil(sqrt):Math.ceil(sqrt+1)
